@@ -9,7 +9,7 @@
 		</div>
 
 	
-	<div ng-hide="esIE" >
+	<div ng-hide="!esIE" >
 		<win-date-picker obtener-control="datePicker(ctrl)" on-change="dateChanged(date)"></win-date-picker>
 		<win-time-picker obtener-control="timerPicker(ctrl)" ng-model="time" current="time" on-change="timeChanged(time)"></win-time-picker>
 	</div>

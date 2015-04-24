@@ -77,5 +77,9 @@ angular.module('starter')
         pushFactory.enviarMensajePlatform(item.email,textoCita, item.platform);
         emailFactory.enviarEmail(usuario.email, item.email, 'Cita solicitada', textoCita, textoCita);
         dataTableStorageFactory.saveStorage(data);
+
+        if(isIE){
+            window.external.notify("Cita solicitada");
+        }
     }
 }])

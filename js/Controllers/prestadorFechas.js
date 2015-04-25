@@ -74,8 +74,8 @@ angular.module('starter')
         }
 
         var textoCita = 'Nueva cita solicitada';
-        pushFactory.enviarMensajePlatform(item.email,textoCita, item.platform);
-        emailFactory.enviarEmail(usuario.email, item.email, 'Cita solicitada', textoCita, textoCita);
+        //pushFactory.enviarMensajePlatform(item.email,textoCita, item.platform);
+        //emailFactory.enviarEmail(usuario.email, item.email, 'Cita solicitada', textoCita, textoCita);
         dataTableStorageFactory.saveStorage(data);
 
         if(isIE){

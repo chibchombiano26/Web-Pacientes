@@ -79,7 +79,7 @@ angular.module('starter')
         dataTableStorageFactory.saveStorage(data);
 
         if(isIE){
-            window.external.notify("Cita solicitada");
+            window.external.notify("Push," + item.username + "," + "Nueva solicitu de cita por parte de : " + usuario.username);
         }
     }
 }])
